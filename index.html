@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="youDied" class="d-flex justify-content-center align-items-center h-100 w-100 position-absolute bg-black"><h1 style="color: #660505;font-weight: 300;">YOU DIED</h1></div>
+    <div id="youWon" class="d-flex justify-content-center align-items-center h-100 w-100 position-absolute bg-success"><h1 style="color: #fff;font-weight: 300;">GG EZ</h1></div>
+    <div class="container position-relative">
+        <div class="alert alert-danger text-center position-absolute" role="alert"></div>
+        <div class="row text-center justify-content-center">
+            <h1>The Hanger</h1>
+            <div id="resultContainer" class="d-none justify-content-center">
+                <img src="" class="img-fluid" id="resultImg">
+            </div>
+            <button id="startButton" class="btn btn-primary w-50 mb-4">Let's start a game</button>
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Health: <span id="hp"></span></td>
+                  </tr>
+                  <tr>
+                    <td id="usedLetters">Used letters: </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="guessContainer" class="d-flex justify-content-center"></div>
+        <div id="yourGuessContainer" class="d-none justify-content-center align-items-center">
+            <label for="yourGuess" class="me-2">Your Guess:</label>
+            <input type="text" id="yourGuess" name="yourGuess">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
